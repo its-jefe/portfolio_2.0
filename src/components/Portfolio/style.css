@@ -1,0 +1,150 @@
+#Portfolio {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: space-between;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 100%;
+}
+#Portfolio a {
+  text-decoration: none;
+}
+#project-ui,
+#project-info {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+#project-ui {
+  display: flex;
+  width: 100%;
+  height: 56%;
+}
+#button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  height: 100%;
+}
+#button-container button {
+  transform: translate(3%, 0); /*lazy*/
+  background-color: rgba(51, 185, 185, 0.2);
+  border: 0.5vh outset rgba(255, 255, 255, 0.5);
+  font-size: 2vh;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.712);
+  margin: 0 2vw;
+  width: 75%;
+  font-size: 2.3vh;
+}
+#button-container button:hover {
+  background-color: rgba(51, 185, 185, 0.2);
+  border: 0.5vh outset rgba(255, 255, 255, 0.5);
+}
+#button-container button:active {
+  background-color: rgba(51, 185, 185, 0.3);
+  border: 0.5vh inset rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+}
+
+#iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#nav-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1vh inset #00000000;
+  width: 70vw;
+  height: 40vh;
+}
+#deploy-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00000000;
+  background-color: #00000000;
+  height: 50%;
+  width: 100%;
+}
+#repo-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00000000;
+  background-color: #00000000;
+  height: 50%;
+  width: 100%;
+}
+/* RESIZE THESE NAV OVERLAYS */
+#deploy-nav:hover,
+#repo-nav:hover {
+  background: radial-gradient(#c4ff4d3b 0%, #c4ff4d 100%);
+  transition: all 0.5s ease;
+  color: rgb(0, 0, 0);
+  font-size: 3vh;
+}
+
+#iframe-container iframe {
+  border: 1vh inset rgb(202, 202, 202);
+  width: 69vw;
+  height: 37.5vh;
+}
+
+#project-info {
+  display: flex;
+  width: 100%;
+  height: 42%;
+}
+#summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#role,
+#tools {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 2.3vh;
+}
+#bottom {
+  display: flex;
+  font-size: 2vh;
+}
+
+#summary,
+#role,
+#tools {
+  /* border: 1px solid black; */
+  padding: 1vh;
+}
+
+#row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

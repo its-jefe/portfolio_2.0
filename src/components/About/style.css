@@ -1,0 +1,81 @@
+#About {
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#About h2 {
+  margin-bottom: 0;
+}
+
+#img-div-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vh;
+  height: 19vh;
+  border: 1px ridge rgba(51, 185, 185, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(#c4ff4d33 35%, rgba(51, 185, 185, 0.5) 100%);
+}
+
+#img-div{
+  border: 1px ridge rgba(51, 185, 185, 0.15);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 90%;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.26);
+  background-clip: content-box;
+}
+
+#About img {
+  background-clip: content-box;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#About p {
+  text-align: center;
+  height: min-content;
+}
+
+#uc-div {
+  position: relative;
+  flex-flow: row;
+  width: fit-content;
+  height: min-content;
+  border-top: .7vmin dashed #c4ff4d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#uc-div p{
+  width: 100%;
+  height: min-content;
+}
+#uc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#About svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  filter: drop-shadow(0 0 10px #c4ff4d )
+}
