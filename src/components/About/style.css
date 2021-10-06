@@ -7,22 +7,12 @@
   width: 100%;
 }
 
-#About h2 {
+#About #title {
   margin-bottom: 0;
-}
-
-#img-div-div{
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 17vh;
-  height: 19vh;
-  border: 1px ridge rgba(51, 185, 185, 0.05);
-  border-radius: 50%;
-  z-index: 0;
-  overflow: hidden;
-  background: radial-gradient(#c4ff4d33 35%, rgba(51, 185, 185, 0.5) 100%);
+  text-align: center;
 }
 
 #img-div{
@@ -30,17 +20,17 @@
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  overflow: hidden;
-  height: 90%;
-  width: 90%;
-  background-color: rgba(255, 255, 255, 0.26);
-  background-clip: content-box;
+  width: fit-content;
+  height: min-content;
+  background-color: rgba(51, 185, 185, 0.055);
 }
 
 #About img {
-  background-clip: content-box;
+  height: 17vh;
+  width: 17vh;
   border-radius: 50%;
   pointer-events: none;
+  filter: drop-shadow(0 0 2px #FFFFFF )
 }
 
 #About p {
@@ -53,7 +43,7 @@
   flex-flow: row;
   width: fit-content;
   height: min-content;
-  border-top: .7vmin dashed #c4ff4d;
+  border-top: .7vmin dashed #d4ff4d;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,15 +57,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-#About svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
+  fill: url(#uc-gradient);
+  width: 14vh;
   height: auto;
-  filter: drop-shadow(0 0 10px #c4ff4d )
+  filter: drop-shadow(0 0 2px #000000 )
 }

@@ -6,6 +6,7 @@
   /* flex-wrap: wrap; */
   width: 100%;
   height: 100%;
+  transition: all 1s ease-in-out 
 }
 #Portfolio a {
   text-decoration: none;
@@ -62,34 +63,48 @@
   flex-direction: row;
   flex-wrap: wrap;
   border: 1vh inset #00000000;
-  width: 70vw;
-  height: 40vh;
+  width: 69vw;
+  height: 38vh;
+  transition: all 0.5s ease-in-out;
 }
 #deploy-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #00000000;
-  background-color: #00000000;
+  background: #00000000;
   height: 50%;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 #repo-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #00000000;
-  background-color: #00000000;
+  background: #00000000;
   height: 50%;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 /* RESIZE THESE NAV OVERLAYS */
 #deploy-nav:hover,
 #repo-nav:hover {
-  background: radial-gradient(#c4ff4d3b 0%, #c4ff4d 100%);
-  transition: all 0.5s ease;
+  animation: background-transition 0.5s ease-in-out forwards;
   color: rgb(0, 0, 0);
+  text-shadow: 0 0 .5vh #d4ff4d, 0 0 1vh #d4ff4d;
   font-size: 3vh;
+  transition: all 0.5s ease-in-out;
+}
+@keyframes background-transition{
+  0% {
+    background: #00000000;
+
+  }
+  100%{
+    background: #d4ff4dab 100%;
+    /* background: #d4ff4d */
+  }
 }
 
 #iframe-container iframe {

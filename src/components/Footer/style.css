@@ -1,0 +1,122 @@
+/* should have just made a component for this but whatever */
+footer {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: 100vw;
+  background-color: rgba(51, 185, 185, 0.3);
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#made-with-love {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+}
+
+#card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  background: radial-gradient(rgb(51, 185, 185) 0%, transparent 60%);
+  /* transition: transform 0.75s ease-in-out; */
+  overflow:visible;
+}
+
+#linkedin {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.75);
+  height: 70%;
+  width: 70%;
+}
+#github {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.75);
+  height: 80%;
+  width: 80%;
+}
+#email_1 {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.75);
+  height: 70%;
+  width: 70%;
+}
+#email_2 {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0);
+  transform: translate(-10%, 5%);
+  height: 70%;
+  width: 70%;
+}
+#phone {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.75);
+  height: 75%;
+  width: 75%;
+}
+
+#card:hover #linkedin,
+#card:hover #github,
+#card:hover #email_1,
+#card:hover #email_2,
+#card:hover #phone {
+  fill: #d4ff4d;
+  filter: drop-shadow(0 0 1vh rgb(247, 255, 128));
+  transition: fill .5s ease, filter .3s ease;
+}
+
+#card:hover #email_1{
+  animation: goodbye_1 1s ease forwards;
+  transition: transform 1s ease;
+}
+@keyframes goodbye_1{
+  0% {
+    fill: rgba(0, 0, 0, 0.75);;
+    transform: rotate(0);
+  }
+  50%{
+    fill: #d4ff4d;
+  }
+  100% {
+    fill: #d4ff4d00;
+    transform: rotate(720deg);}
+}
+
+#card:hover #email_2{
+  animation: goodbye_2 3s ease;
+  transition: all 1.5s ease;
+}
+@keyframes goodbye_2{
+  0%{
+    fill: #d4ff4d00;
+    transform: rotate(0) translate(-10%, 5%);
+  }
+  25%{
+    fill: #d4ff4d;
+    transform: rotate(1080deg)
+    translate(-10%, 5%);
+  }
+  75%{
+    fill: #d4ff4d;
+  }
+  100%{
+    fill: #d4ff4d00;
+    transform: translate(2vw, -2vw)
+  }
+}

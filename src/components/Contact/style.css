@@ -1,6 +1,7 @@
 #Contact {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   align-items: center;
   height: 100%;
@@ -8,62 +9,118 @@
   color: rgba(0, 0, 0, 0.377);
 }
 
-#card {
+#contact-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 35vh;
-  width: 35vh;
-  border-radius: 50%;
-  background-image: radial-gradient(rgb(51, 185, 185) 0%, white 100%);
-}
-#card:hover {
-  border: 1vh solid rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease;
+  width: 50%;
+  height: min-content;
 }
 
-#linkedin {
-  fill: rgba(0, 0, 0, 0.75);
-  height: 70%;
-  width: 70%;
+#name-input,
+#email-input,
+#message-input,
+#submit-btn {
+  border: 1px solid;
+  background: rgba(51, 185, 185, 0.1);
+  outline: none;
 }
 
-#linkedin:hover {
-  fill: #c4ff4d;
-  transition: all 0.5s ease;
+#name-input::placeholder,
+#email-input::placeholder,
+#message-input::placeholder,
+#submit-btn::placeholder {
+  color: rgba(0, 0, 0, 0.384);
+  /* text-shadow: 0 0 .2vh #d4ff4d; */
 }
 
-#github {
-  fill: rgba(0, 0, 0, 0.75);
-  height: 80%;
-  width: 80%;
+#name-input:focus,
+#email-input:focus,
+#message-input:focus {
+  border: 1px solid rgb(51, 185, 185);
+  box-shadow: 0 0 .25vh .25vh #d4ff4d;
 }
 
-#github:hover {
-  fill: #c4ff4d;
-  transition: all 0.5s ease;
+#name-input{
+  width: 100%;
+  height: min-content;
+  padding: 1vh;
+  margin: 0.5vh 0vh;
+}
+#email-input{
+  width: 100%;
+  height: min-content;
+  padding: 1vh;
+  margin: 0.5vh 0vh;
+}
+#message-input{
+  width: 100%;
+  height: min-content;
+  padding: 1vh;
+  margin: 0.5vh 0vh;
+}
+#submit-btn{
+  padding: 1vh;
+  font-size: 2vh;
+  font-weight: bold;
+  width: min-content;
+  margin: 0.5vh 0vh;
+  color: rgb(51, 185, 185);
 }
 
-#email {
-  fill: rgba(0, 0, 0, 0.75);
-  height: 70%;
-  width: 70%;
-  transform: translate(-10%, 5%);
+#submit-btn:hover {
+  animation: on_submit 1s infinite linear alternate;
+  filter: drop-shadow(0 0 10px rgb(0, 255, 255));
+  background: rgba(51, 185, 185, 0.1);
 }
 
-#email:hover {
-  fill: #c4ff4d;
-  transition: all 0.5s ease;
+#submit-btn:active {
+  border: 1px inset rgb(51, 185, 185);
+  color: rgb(51, 185, 185);
+  background:#d4ff4d;
+  transition: all .1s ease-in-out;
 }
 
-#phone {
-  fill: rgba(0, 0, 0, 0.75);
-  height: 75%;
-  width: 75%;
+@keyframes on_submit{
+  0%{
+    background-image: linear-gradient(to left, #d4ff4d 0%, transparent 5%);
+  }
+  10%{
+    background-image: linear-gradient(to left, transparent 2.5%, #d4ff4d 10%, transparent 17.5%);
+  }
+  20%{
+    background-image: linear-gradient(to left, transparent 12.5%, #d4ff4d 20%, transparent 27.5%);
+  }
+  30%{
+    background-image: linear-gradient(to left, transparent 22.5%, #d4ff4d 30%, transparent 37.5%);
+  }
+  40%{
+    background-image: linear-gradient(to left, transparent 32.5%, #d4ff4d 40%, transparent 47.5%);
+  }
+  50%{
+    background-image: linear-gradient(to left, transparent 42.5%, #d4ff4d 50%, transparent 57.5%);
+  }
+  60%{
+    background-image: linear-gradient(to left, transparent 52.5%, #d4ff4d 60%, transparent 67.5%);
+  }
+  70%{
+    background-image: linear-gradient(to left, transparent 62.5%, #d4ff4d 70%, transparent 77.5%);
+  }
+  80%{
+    background-image: linear-gradient(to left, transparent 72.5%, #d4ff4d 80%, transparent 87.5%);
+  }
+  90%{
+    background-image: linear-gradient(to left, transparent 82.5%, #d4ff4d 90%, transparent 97.5%);
+  }
+  100%{
+    background-image: linear-gradient(to left, transparent 92.5%, #d4ff4d 100%);
+  }
 }
 
-#phone:hover {
-  fill: #c4ff4d;
-  transition: all 0.5s ease;
+#error-text {
+  color: rgba(255, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  font-size: 1.75vh;
+  height: min-content;
 }

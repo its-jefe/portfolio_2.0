@@ -7,6 +7,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer'
 
 function App() {
 
@@ -44,11 +45,11 @@ function App() {
         <main>
 
           <Switch>
-            <Route exact path={`/${category.name}`} component={category.component}/>
+            <Route exact path={`/${category.name}`} component={category.component} />
             <Redirect to={`/${category.name}`} />
           </Switch>
         </main>
-        <footer>Footer</footer>
+        <Footer/>
       </div>
     </Router>
   );

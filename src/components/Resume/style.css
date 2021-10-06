@@ -22,9 +22,9 @@
 #Resume iframe {
   box-sizing: content-box;
   /* width: 74vmin; */
-  width: 50%;
+  width: 100%;
   height: 100%;
-  border: 5vw solid red;
+  /* border: 5vw solid red; */
   padding: 0 2.5vw;
   border-top: none;
   border-bottom: none;
