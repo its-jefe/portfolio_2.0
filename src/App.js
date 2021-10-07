@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 import Nav from './components/Nav';
 
@@ -25,6 +25,8 @@ function App() {
   // actually passes into Nav after this and capitalizes the string before
   const [headerTitle, setHeaderTitle] = useState(categories[0].name);
 
+
+  console.log(BrowserRouter)
   // Pop and push from category array into Nav 
   return (
     <Router>
@@ -45,8 +47,8 @@ function App() {
         <main>
 
           <Switch>
-            <Route exact path={`/${category.name}`} component={category.component} />
-            <Redirect to={`/${category.name}`} />
+            <Route exact path={`/react-portfolio/${category.name}`} component={category.component} />
+            <Redirect to={`/react-portfolio/${category.name}`} />
           </Switch>
         </main>
         <Footer/>
