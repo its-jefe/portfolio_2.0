@@ -24,6 +24,8 @@
   border: 1px solid;
   background: rgba(51, 185, 185, 0.1);
   outline: none;
+  margin: 1vh 0vh;
+  padding: 1vh;
 }
 
 #name-input::placeholder,
@@ -44,23 +46,16 @@
 #name-input{
   width: 100%;
   height: min-content;
-  padding: 1vh;
-  margin: 0.5vh 0vh;
 }
 #email-input{
   width: 100%;
   height: min-content;
-  padding: 1vh;
-  margin: 0.5vh 0vh;
 }
 #message-input{
   width: 100%;
   height: min-content;
-  padding: 1vh;
-  margin: 0.5vh 0vh;
 }
 #submit-btn{
-  padding: 1vh;
   font-size: 2vh;
   font-weight: bold;
   width: min-content;
