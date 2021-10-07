@@ -1,6 +1,6 @@
-<style>
+<!-- <style>
   coolbeans {font-size: 3rem}
-</style>
+</style> -->
 
 # React Portfolio
 
