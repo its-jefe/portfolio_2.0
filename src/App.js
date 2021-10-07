@@ -47,9 +47,8 @@ function App() {
         <main>
 
           <Switch>
+            <Route path ={'/react-portfolio/*'} component = {About} />
             <Route path={`/react-portfolio/${category.name}`} component={category.component} />
-            <Route path ={'/*'} component = {About} />
-            <Route component={About} />
             <Redirect to={`/react-portfolio/${category.name}`} />
           </Switch>
         </main>
