@@ -12,8 +12,8 @@ function Portfolio() {
       repo: "https://github.com/its-jefe/Project-3",
       deployment: "https://p3-snake.herokuapp.com/",
       info: {
-        summary: "Yada yada yada we made a game.",
-        role: "Group Project: I was responsible for game logic and game CSS. Took on some React routing as well",
+        summary: "We made a game!",
+        role: "Group Project: I was responsible for game logic and design/CSS. Took on some React routing as well.",
         tools: "HTML, CSS, JavaScript, Node, React, React-Router"
       }
     },
