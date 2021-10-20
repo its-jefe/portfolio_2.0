@@ -13,7 +13,7 @@ function Portfolio() {
       deployment: "https://p3-snake.herokuapp.com/",
       info: {
         summary: "We made a game!",
-        role: "Group Project: I was responsible for game logic and design/CSS. Took on some React routing as well.",
+        role: "Group Project: I was responsible for game logic and design/CSS. Took on some React routing as well",
         tools: "HTML, CSS, JavaScript, Node, React, React-Router"
       }
     },
