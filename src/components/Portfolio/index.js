@@ -2,6 +2,8 @@ import React, { useState, useReducer } from "react"
 
 import "./style.css"
 
+// let btn_el = document.getElementById("bottom").style()
+
 function Portfolio() {
 
   // add prokects here 
@@ -9,7 +11,7 @@ function Portfolio() {
     {
       index: 0,
       name: "MERN Stack Game",
-      repo: "https://github.com/its-jefe/Project-3",
+      repo: "https://github.com/its-jefe/Snak3r",
       deployment: "https://p3-snake.herokuapp.com/",
       info: {
         summary: "We made a game!",
@@ -37,6 +39,39 @@ function Portfolio() {
         summary: "Desgined the front end based on a mock photo and then implemented the OpenWeather API on the backend to get the weather of searched cities.",
         role: "Sole author",
         tools: "HTML, CSS, JavaScript, API, Bootstrap"
+      }
+    },
+    {
+      index: 3,
+      name: "4",
+      repo: "",
+      deployment: "",
+      info: {
+        summary: "",
+        role: "",
+        tools: ""
+      }
+    },
+    {
+      index: 4,
+      name: "5",
+      repo: "",
+      deployment: "",
+      info: {
+        summary: "",
+        role: "",
+        tools: ""
+      }
+    },
+    {
+      index: 5,
+      name: "6",
+      repo: "",
+      deployment: "",
+      info: {
+        summary: "",
+        role: "Sole author",
+        tools: ""
       }
     },
   ])
