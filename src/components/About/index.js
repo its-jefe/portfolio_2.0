@@ -18,6 +18,9 @@ function About() {
         <p>I love writing backend logic and algorithms.</p>
         <p>I also love designing interactive user experiences but I need more practice with CSS. I am currently trying to bridge the gap and obtain responsive CSS using Javascript and React.</p>
 
+
+        <p>When I am not coding, I enjoy producing music, video games, and being with friends and family.</p>
+
       </div>
 
       <div id="uc-div">
