@@ -2,19 +2,17 @@ import React, { useState, useReducer } from "react"
 
 import "./style.css"
 
-// let btn_el = document.getElementById("bottom").style()
 
 function Portfolio() {
-
-  // add prokects here 
+  // add projects here 
   const [projects] = useState([
     {
       index: 0,
       name: "MERN Stack Game",
       repo: "https://github.com/its-jefe/Snak3r",
-      deployment: "https://p3-snake.herokuapp.com/",
+      deployment: "https://p3-snake.herokuapp.com/gamepage",
       info: {
-        summary: "We made a game!",
+        summary: "The beginnings of a snake game using React.",
         role: "Group Project: I was responsible for game logic and design/CSS. Took on some React routing as well",
         tools: "HTML, CSS, JavaScript, Node, React, React-Router"
       }
@@ -43,35 +41,46 @@ function Portfolio() {
     },
     {
       index: 3,
-      name: "4",
-      repo: "",
-      deployment: "",
+      name: "Password Generator",
+      repo: "https://github.com/its-jefe/Password-Generator",
+      deployment: "https://its-jefe.github.io/Password-Generator/",
       info: {
-        summary: "",
-        role: "",
-        tools: ""
+        summary: "App that generates a random password based on user-selected criteria.",
+        role: "Sole Author: Wrote the Javascript code to generate passcodes and added password criteria selection",
+        tools: "HTML, CSS, JavaScript"
       }
     },
     {
       index: 4,
-      name: "5",
-      repo: "",
-      deployment: "",
+      name: "Note Taker",
+      repo: "https://github.com/its-jefe/Note-Taker",
+      deployment: "https://young-harbor-02832.herokuapp.com/",
       info: {
-        summary: "",
-        role: "",
-        tools: ""
+        summary: "Write, save, and delete notes! This application uses an Express.js back-end to save and retrieve note data from a JSON file.",
+        role: "Sole Author: I wrote the back-end, connected the front-end, and then deployed the application to Heroku.",
+        tools: "Javascript, ExpressJS, API, CSS, HTML"
       }
     },
     {
       index: 5,
-      name: "6",
-      repo: "",
-      deployment: "",
+      name: "Budget Tracker",
+      repo: "https://github.com/its-jefe/Budget-Tracker",
+      deployment: "https://fudge-it-budgit.herokuapp.com/",
       info: {
-        summary: "",
-        role: "Sole author",
-        tools: ""
+        summary: "A budget tracker linked to a MongoDB backend, that once downloaded, works offline and updates the database once connection is regained. I still need to work on offline functionality when not downloaded...",
+        role: "Sole author: My first progressive web application! Took a functioning budget tracker and made it a PWA",
+        tools: "HTML, CSS, Javascript, ExpressJS, Mongoose"
+      }
+    },
+    {
+      index: 6,
+      name: "Mars Report",
+      repo: "https://github.com/its-jefe/Mars-Report",
+      deployment: "https://its-jefe.github.io/Mars-Report",
+      info: {
+        summary: "Used the Nasa Mars Weather Service API to get the weather on Mars! Then allows the user to pick a date and a rover to get corresponding photos on the chosen date from the chosen rover using Nasas Mars Rover Photos API.",
+        role: "Group Project: I learned Tailwind CSS to handle the CSS. Also worked heavily on the API calls and backend functionality. Also messed with keyframes and adobe illustrator to add the spaceship",
+        tools: "JavaScript, Tailwind, CSS, HTML, Adobe Illustrator"
       }
     },
   ])
