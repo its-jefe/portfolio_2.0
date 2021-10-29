@@ -15,7 +15,7 @@ function About() {
       <div>
         <p>Hey, my name is Jeff. Welcome to my portfolio built with react.</p>
 
-        <p>I love writing backend logic and algorithms.</p>
+        <p>I love writing algorithms.</p>
         <p>I also love designing interactive user experiences but I need more practice with CSS. I am currently trying to bridge the gap and obtain responsive CSS using Javascript and React.</p>
 
 
