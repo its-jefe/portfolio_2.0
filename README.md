@@ -1,13 +1,8 @@
-# React Portfolio
+# Codebase of my Portfolio
 
-### Welcome to the repo of my react portfolio 😎
-Deployed on [GitHub Pages](https://its-jefe.github.io/react-portfolio/)
+## Didn't write a readme but if you're here for some code, have at it. 😎
 
-## Table of contents <br />
- - [Description](#description) <br />
- - [Future Development](#future) <br />
+Deployed with [Firebase](https://jeff-timson.dev)
 
-
-Thanks for stopping by 
-
- ![Stay Clasy](./src/assets/Stay_Classy.gif)
+Stay classy
+ ![Stay Classy](./src/assets/Stay_Classy.gif)
