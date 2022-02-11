@@ -1,0 +1,134 @@
+#Projects {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  transition: all 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  border: none;
+  flex-flow: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  // opacity: 0;
+
+  .roladex {
+    height: fit-content;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    border: none;
+    padding: 0.5vmin;
+    overflow: hidden;
+  }
+  .project {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .project-title {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    color: var(--s18);
+    background: var(--p1);
+    padding: 0.5vh;
+    text-align: center;
+    text-shadow: 0 0 1vmin var(--s10);
+  }
+  .project-subtitle {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    color: var(--s6);
+    background: var(--p2);
+    padding: 0.25vh;
+    text-align: center;
+    font-size: 90%;
+    // font-weight: 100;
+    filter: drop-shadow(0 0.5vmin 0.5vmin var(--s3));
+  }
+
+  .project-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    height: 100%;
+    width: 50vw;
+    background: var(--p2);
+    overflow: hidden;
+    box-shadow: inset 0 0 1vmin 1px var(--s3);
+    text-align: center;
+    color: var(--s19);
+    font-weight: 100;
+    padding: 1vh;
+    // justify-content: center;
+  }
+
+  .project-left > div {
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin;
+    margin: 0.25vmin;
+    background: var(--p3);
+  }
+  .project-left .heading {
+    // text-decoration: underline;
+    font-size: 110%;
+    color: var(--s14);
+    height: fit-content;
+  }
+  .project-left .text {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding-top: 1vmin;
+    flex-grow: 1;
+  }
+
+  .role {
+    padding: 1vmin;
+    background: var(--p3);
+    height: 15%;
+    height: max-content;
+  }
+  .tools {
+    padding: 1vmin;
+    background: var(--p3);
+    margin: 0.5 0;
+    height: max-content;
+  }
+  .summary {
+    padding: 1vmin;
+    margin: 0.5 0;
+    height: max-content;
+    // flex-grow: 1;
+  }
+
+  .project-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50vw;
+    background: var(--p2);
+    overflow: hidden;
+    box-shadow: inset 0 0 1vmin 1px var(--s3);
+    text-align: center;
+    color: var(--s19);
+    font-weight: 100;
+    padding: 1vh;
+    overflow: hidden;
+  }
+  .project-container iframe {
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+    border: none;
+    user-select: none;
+    pointer-events: none;
+  }
+}

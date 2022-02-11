@@ -1,0 +1,83 @@
+{
+  "intro": [
+    "Inquisitive and efficient Junior Full Stack Web Developer with a focus on smart algorithms and interactive user experiences. Certified in Full Stack Web Development, Python, IT Support and pursuing a bachelor’s degree in Computer Science. Inspired by the possibilities that new technologies and innovation bring with a lifelong love for learning and compounding knowledge. Proficient in the MERN Stack and looking for a role in which to learn, grow, and contribute."
+  ],
+  "skills": [
+    "Node, React, React-Router, Redux, Express, JavaScript (ES6), C, Python, MongoDB, Mongoose, GraphQL, MySQL, Sequelize, HTML, CSS, SASS/SCSS, Bootstrap, REST Architecture, APIs, JSON, Agile Methodologies, MVC Pattern, Data Structures, Algorithms, Regex, Object Oriented Programming, Progressive Web Applications, Test Driven Development, Jest Testing, Lighthouse Testing, Git, Git Flow, Site Reliability Engineering, Search Engine Optimization, Virtual Machiness, Command Line Interface"
+  ],
+  "tools": [
+    "MacOS, Windows, Google Chrome, Safari, Firefox, GitHub, Firebase, Heroku, Adobe Illustrator, Figma, Microsoft Office, Google Suite"
+  ],
+  "work": [
+    {
+      "position": "Shift Supervisor / Barista Trainer",
+      "company": "Starbucks",
+      "location": "Bradenton, Florida",
+      "dates": "07/2021 - Present",
+      "details": [
+        "Maintain high attention to detail and manage time wisely to support smooth store operations.",
+        "Think calmly under pressure – during high customer volume – to handle challenges as they arise.",
+        "Excel at communicating with coworkers and customers ensuring legendary customer service."
+      ]
+    },
+    {
+      "position": "Tradeshow I&D Leader",
+      "company": "Trade Show Supply Co.",
+      "location": "Orlando, Florida",
+      "dates": "05/2018 – 03/2020",
+      "details": [
+        "Responsible for the execution and coordination of retail brand exhibits at trade shows.",
+        "Coordinated with clients, sales teams, and supervisors to ensure highest possible quality.",
+        "Adapted to project changes and client requests with high attention to detail.",
+        "Produced daily reports which highlighted successes and areas for improvement."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Central Florida",
+      "studies": [
+        {
+          "program": "Certificate – Full Stack Web Development (240 Hours + 17 Projects)",
+          "location": "Orlando, Florida",
+          "dates": "04/2021 – 09/2021"
+        },
+        {
+          "program": "Bachelor of Science – Computer Science (Pursuant)",
+          "location": "Orlando, Florida",
+          "dates": "08/2020 – Present"
+        }
+      ]
+    },
+    {
+      "institution": "Grow with Google",
+      "studies": [
+        {
+          "program": "Certificate – Crash Course on Python",
+          "location": "Online",
+          "dates": "03/2021 – 04/2021"
+        },
+        {
+          "program": "Certificate – IT Support",
+          "location": "Online",
+          "dates": "10/2020 – 02/2021"
+        }
+      ]
+    },
+    {
+      "institution": "Valencia College",
+      "studies": [
+        {
+          "program": "Certificate – Crash Course on Python",
+          "location": "Orlando, Florid",
+          "dates": "08/2018 – 07/2020"
+        },
+        {
+          "program": "Certificate – IT Support",
+          "location": "Orlando, Florid",
+          "dates": "08/2013 – 08/2016"
+        }
+      ]
+    }
+  ]
+}

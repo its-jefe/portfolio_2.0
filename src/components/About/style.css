@@ -1,64 +1,54 @@
 #About {
   display: flex;
+  position: relative;
   flex-flow: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100%;
   width: 100%;
+  font-size: 1rem;
+  user-select: none;
+  color: white;
+  /* background: blue; */
+  /* margin-top: 16vh; */
+  min-height: 100%;
+  overflow: visible;
+  padding: 5vmin 10vmin;
 }
 
-#About #title {
-  margin-bottom: 0;
+#About .me {
   display: flex;
+  position: relative;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 100%;
 }
 
-#img-div{
-  border: 1px ridge rgba(51, 185, 185, 0.15);
+#About .fswb {
+  position: absolute;
+  text-shadow: 0.5px 0.5px 0.5px black; /*#d4ff4d*/
+  font-size: 125%;
+  font-weight: 100;
+  bottom: -6%;
+}
+#About .img-div {
   display: flex;
   justify-content: center;
-  border-radius: 50%;
-  width: fit-content;
-  height: min-content;
-  background-color: rgba(51, 185, 185, 0.055);
+  height: 20vw;
+  width: 20vw;
+  max-width: 160px;
+  max-height: 160px;
+  overflow: hidden;
+  bottom: 16vh;
 }
 
 #About img {
-  height: 17vh;
-  width: 17vh;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  filter: drop-shadow(0 0 2px #FFFFFF )
+  filter: drop-shadow(0 0 3px white);
+  opacity: 0.85;
 }
-
 #About p {
   text-align: center;
   height: min-content;
-}
-
-#uc-div {
-  position: relative;
-  flex-flow: row;
-  width: fit-content;
-  height: min-content;
-  border-top: .7vmin dashed #d4ff4d;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-#uc-div p{
-  width: 100%;
-  height: min-content;
-}
-#uc-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: url(#uc-gradient);
-  width: 14vh;
-  height: auto;
-  filter: drop-shadow(0 0 2px #000000 )
+  font-weight: 200;
 }

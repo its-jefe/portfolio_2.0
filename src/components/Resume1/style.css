@@ -1,0 +1,133 @@
+/* Inherits the CSS of main */
+
+#Resume {
+  opacity: 0;
+  width: 100%;
+  min-height: 100%;
+  max-height: max-content;
+  transition: opacity 2s ease, background-color 1s ease;
+  font-weight: 100;
+  border: 3px solid #00000025;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: auto auto auto auto;
+  margin-top: 16vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.resume-left {
+  border: 2px solid hsl(0, 0%, 20%, 33%);
+  opacity: 0.9;
+  width: 100%;
+}
+section.resume-left:hover {
+  opacity: 1;
+  z-index: 2;
+}
+.resume-right {
+  border: 2px solid hsl(180, 57%, 20%, 0.33);
+  opacity: 0.9;
+  width: 100%;
+}
+section.resume-right:hover {
+  opacity: 1;
+  z-index: 2;
+}
+
+#Resume section {
+  transition: transform 0.5s ease-in-out, margin 0.75s ease,
+    box-shadow 2s ease-in-out;
+  padding: 0vmin 1vmin;
+}
+#Resume .row-1 {
+  /* padding: 0vmin 1vmin; */
+}
+#Resume .row-2 {
+  align-items: center;
+  justify-content: center;
+}
+
+#Resume .row-3 {
+  align-items: center;
+}
+#Resume .row-4 {
+  padding: 1vmin 1vmin;
+}
+
+.resume-left.row-1 {
+  background: var(--p7);
+  color: var(--p2);
+}
+.resume-right.row-1 {
+  background: var(--s7);
+  color: var(--s2);
+}
+
+.resume-left.row-2 {
+  /* transition: all 2s ease; */
+  background: var(--p9);
+}
+.resume-right.row-2 {
+  background: var(--s9);
+}
+
+.resume-left.row-3 {
+  background: var(--p7);
+  color: var(--p2);
+}
+.resume-right.row-3 {
+  background: var(--s7);
+  color: var(--s2);
+}
+
+.resume-left.row-4 {
+  background: var(--p9);
+}
+.resume-right.row-4 {
+  background: var(--s9);
+}
+
+.skills-left {
+  /* min-width: max-content; */
+  padding-right: 1vh;
+  color: var(--p2);
+  text-align: right;
+  justify-self: left;
+  /* word-wrap: break-word; */
+}
+.skills-spacer {
+  border: 1px solid var(--s4);
+  height: 98%;
+  align-self: center;
+  margin-right: 1vh;
+  opacity: 0.25;
+  justify-self: center;
+}
+.skills-right {
+  display: flex;
+  width: min-content;
+  color: var(--s3);
+}
+.star-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.star-overlay {
+  transition: transform 2s ease;
+  z-index: 1;
+}
+.star-underlay {
+  position: absolute;
+  overflow: hidden;
+  background: none;
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
+  color: var(--a12);
+  opacity: 0.75;
+}
+.star-overlay:hover ~ .star-underlay {
+  opacity: 1;
+}

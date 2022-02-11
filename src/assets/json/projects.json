@@ -1,0 +1,89 @@
+{
+  "projects":
+  [
+    {
+      "index": 0,
+      "title": "MERN Stack Group Project",
+      "subtitle": "Snake Game (almost)",
+      "repo": "https://github.com/its-jefe/Snak3r",
+      "deployment": "https://p3-snake.herokuapp.com/gamepage",
+      "details": {
+        "summary": "Challenged to create a full MERN stack project we settled on making a snake game. full time jobs and other time constraints left no more than a weekend to create this.",
+        "role": "Game component: Logic, design/CSS, and React routing",
+        "tools": "HTML, CSS, JavaScript, Node, React, React-Router"
+      }
+    },
+    {
+      "index": 1,
+      "title": "Asynchronous Timers Project",
+      "subtitle": "GameShow",
+      "repo": "https://github.com/its-jefe/Code-Quiz",
+      "deployment": "https://its-jefe.github.io/Code-Quiz/",
+      "details": {
+        "summary": "Basic quiz game applying JS logic and fun CSS animation",
+        "role": "Sole author",
+        "tools": "JavaScript, CSS, HTML, Adobe Illustrator"
+      }
+    },
+    {
+      "index": 2,
+      "title": "Weather API Caller",
+      "subtitle": "Weather Dashboard",
+      "repo": "https://github.com/its-jefe/Weather-Dashboard",
+      "deployment": "https://its-jefe.github.io/Weather-Dashboard/",
+      "details": {
+        "summary": "Desgined the front end based on a mock photo and then implemented the OpenWeather API on the backend to get the weather of searched cities.",
+        "role": "Sole author",
+        "tools": "HTML, CSS, JavaScript, API, Bootstrap"
+      }
+    },
+    {
+      "index": 3,
+      "title": "Password Generator",
+      "subtitle": "The Password Algorithm",
+      "repo": "https://github.com/its-jefe/Password-Generator",
+      "deployment": "https://its-jefe.github.io/Password-Generator/",
+      "details": {
+        "summary": "App that generates a random password based on user-selected criteria.",
+        "role": "Sole Author: Wrote the Javascript code to generate passcodes and added password criteria selection",
+        "tools": "HTML, CSS, JavaScript"
+      }
+    },
+    {
+      "index": 4,
+      "title": "Note Taker",
+      "subtitle": "The Express.js Back-End ",
+      "repo": "https://github.com/its-jefe/Note-Taker",
+      "deployment": "https://young-harbor-02832.herokuapp.com/",
+      "details": {
+        "summary": "Write, save, and delete notes! This application uses an Express.js back-end to save and retrieve note data from a JSON file.",
+        "role": "Sole Author: I wrote the back-end, connected the front-end, and then deployed the application to Heroku.",
+        "tools": "Javascript, ExpressJS, API, CSS, HTML"
+      }
+    },
+    {
+      "index": 5,
+      "title": "Budget Tracker",
+      "subtitle": "The PWA",
+      "repo": "https://github.com/its-jefe/Budget-Tracker",
+      "deployment": "https://fudge-it-budgit.herokuapp.com/",
+      "details": {
+        "summary": "A budget tracker linked to a MongoDB backend, that once downloaded, works offline and updates the database once connection is regained. I still need to work on offline functionality when not downloaded...",
+        "role": "Sole author: My first progressive web application! Took a functioning budget tracker and made it a PWA",
+        "tools": "HTML, CSS, Javascript, ExpressJS, Mongoose"
+      }
+    },
+    {
+      "index": 6,
+      "title": "Mars Report",
+      "subtitle": "The Tandem API Group Project",
+      "repo": "https://github.com/its-jefe/Mars-Report",
+      "deployment": "https://its-jefe.github.io/Mars-Report",
+      "details": {
+        "summary": "Used the Nasa Mars Weather Service API to get the weather on Mars! Then allows the user to pick a date and a rover to get corresponding photos on the chosen date from the chosen rover using Nasas Mars Rover Photos API.",
+        "role": "Group Project: I learned Tailwind CSS to handle the CSS. Also worked heavily on the API calls and backend functionality. Also messed with keyframes and adobe illustrator to add the spaceship",
+        "tools": "JavaScript, Tailwind, CSS, HTML, Adobe Illustrator"
+      }
+    }
+  ]
+}
