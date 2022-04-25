@@ -1,0 +1,326 @@
+@import "../imports";
+
+header {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  padding: 7px 20px;
+  z-index: 2;
+  filter: drop-shadow(0 0 2px $s60);
+  user-select: none;
+  transition: all 300ms linear;
+
+  .name-container {
+    display: table;
+    width: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 0.7;
+    mix-blend-mode: lighten;
+
+    .name {
+      display: table-cell;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      position: relative;
+      height: fit-content;
+      position: relative;
+    }
+
+    .jeff {
+      display: table-cell;
+      width: 100%;
+      font-size: 250%;
+      font-weight: 100;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: $s50;
+      background-image: linear-gradient($a45, $a45);
+      background-size: 100% 0%;
+      background-position: top;
+      background-repeat: no-repeat;
+      will-change: background-size, filter;
+      transition: background-size 665ms linear 460ms, filter 1000ms linear 420ms,
+        text-shadow 1000ms linear 350ms;
+    }
+
+    .timson-container {
+      position: relative;
+      font-size: 170%;
+      font-weight: 100;
+      color: transparent;
+      // this hides placeholder text for element size
+    }
+
+    .timson-overlay {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      height: 50%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: $s60;
+      background-image: linear-gradient($a65, $a65);
+      background-size: 100% 0%;
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: 1;
+      transition: background-size 216ms linear 300ms, filter 850ms linear,
+        text-shadow 850ms linear;
+    }
+
+    .timson-underlay {
+      position: absolute;
+      bottom: 0;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: $s50;
+      background-image: linear-gradient($a45, $a45);
+      background-size: 100% 0%;
+      background-position: top;
+      background-repeat: no-repeat;
+      transition: background-size 432ms linear 80ms, filter 700ms linear,
+        text-shadow 700ms linear;
+    }
+
+    &:hover {
+      .jeff {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-size 665ms linear, filter 665ms linear,
+          text-shadow 665ms linear;
+        background-size: 100% 100%;
+        filter: drop-shadow(0px 0px 0.2vh $a75);
+        text-shadow: 0 0 0.001vh $p05;
+      }
+
+      .timson-overlay {
+        transition: background-size 216ms linear 600ms,
+          filter 500ms linear 600ms, text-shadow 500ms linear 600ms;
+        background-size: 100% 100%;
+        filter: drop-shadow(0 0 0.25vh rgba(247, 255, 128, 0));
+        /* need to hide or it doubles up */
+        text-shadow: 0 0 0.001vh $p05;
+      }
+
+      .timson-underlay {
+        transition: background-size 432ms linear 600ms,
+          filter 500ms linear 600ms, text-shadow 500ms linear 600ms;
+        background-size: 100% 100%;
+        filter: drop-shadow(0px 0px 0.2vh $a75);
+        text-shadow: 0 0 0.001vh $p05;
+      }
+    }
+  }
+
+  // BEGIN NAV // 
+
+  nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: clamp(15px, 115%, 18px);
+
+    // border: 1px solid white;
+
+    ul {
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      justify-content: space-around;
+      align-items: flex-end;
+      // border: 1px solid white;
+    }
+
+    li {
+      color: $s60;
+      // height: fit-content;
+      will-change: color, transform, mix-blend-mode, height, width, top, font-size, background-color;
+      -webkit-filter: drop-shadow(0 0 0.05vh transparent);
+      filter: drop-shadow(0px 0px 0.05vh transparent);
+      text-shadow: 0 0 1px $p05;
+
+      &:hover {
+        // cursor: pointer;
+        transition: mix-blend-mode 1s linear;
+        color: $a65;
+        text-shadow: 0 0 1px $p05, 0 0 2px $p05;
+
+        @media (width > 701px) {
+          mix-blend-mode: hard-light;
+          -webkit-filter: drop-shadow(0 0 0.05vh $s75);
+          filter: drop-shadow(0px 0px 0.05vh $s75);
+        }
+      }
+
+      @media (width > 701px) {
+        &:active {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media (width < 700px) {
+    nav {
+      // position: relative;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+
+      ul {
+        flex-flow: column;
+        font-size: 0px;
+        height: 28px;
+        width: 26px;
+
+        &:hover:not(.test1) {
+          li {
+            background: $a65;
+          }
+        }
+
+        li {
+          // position: relative;
+          height: 3px;
+          width: 26px;
+          margin: 2px 0;
+          overflow: hidden;
+          background-color: $s60;
+          pointer-events: none;
+          -webkit-filter: drop-shadow(0 0 0.05vh transparent);
+          filter: drop-shadow(0px 0px 0.05vh transparent);
+          text-shadow: 0 0 1px transparent;
+        }
+
+        li:nth-of-type(1) {
+          transition:
+            top 200ms ease,
+            font-size 0ms ease,
+            height 200ms ease,
+            width 200ms ease,
+            background-color 200ms linear;
+        }
+
+        li:nth-of-type(2) {
+          transition:
+            top 400ms ease,
+            font-size 0ms ease,
+            height 400ms ease,
+            width 400ms ease,
+            background-color 400ms linear;
+        }
+
+        li:nth-of-type(3) {
+          transition:
+            top 600ms ease,
+            font-size 0ms ease,
+            height 600ms ease,
+            width 600ms ease,
+            background-color 600ms linear;
+        }
+
+        li:nth-of-type(4) {
+          transition:
+            top 800ms ease,
+            font-size 0ms ease,
+            height 800ms ease,
+            width 800ms ease,
+            background-color 800ms linear;
+        }
+      }
+    }
+
+    .test1 {
+      user-select: none;
+
+      li {
+        position: absolute;
+        font-size: 14px;
+        height: 20px;
+        width: 100px;
+        color: $s60;
+        -webkit-filter: drop-shadow(0 0 0.05vh transparent);
+        filter: drop-shadow(0px 0px 0.05vh transparent);
+        text-shadow: 0 0 1px $p05;
+        pointer-events: all;
+        background: $p15;
+        padding-left: 3.5px;
+
+        span {
+          will-change: color, transform, mix-blend-mode, height, width;
+        }
+
+        &:active {
+          span {
+            display: inline-block;
+            transform-origin: 0% 50%;
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+          }
+        }
+      }
+
+      li:nth-of-type(1) {
+        transition:
+          top 200ms ease,
+          font-size 000ms linear,
+          height 200ms ease,
+          width 200ms ease,
+          background-color 200ms linear;
+        top: 96%;
+      }
+
+      li:nth-of-type(2) {
+        transition:
+          top 400ms ease,
+          font-size 000ms linear,
+          height 400ms ease,
+          width 400ms ease,
+          background-color 400ms linear;
+        top: calc(96% + 20px);
+      }
+
+      li:nth-of-type(3) {
+        transition:
+          top 600ms ease,
+          font-size 000ms linear,
+          height 600ms ease,
+          width 600ms ease,
+          background-color 600ms linear;
+        top: calc(96% + 40px);
+      }
+
+      li:nth-of-type(4) {
+        transition:
+          top 800ms ease,
+          font-size 000ms linear,
+          height 800ms ease,
+          width 800ms ease,
+          background-color 800ms linear;
+        top: calc(96% + 60px);
+      }
+    }
+  }
+}
+
+@media (width < 700px) {
+  header {
+    padding: 1% 4%;
+  }
+}

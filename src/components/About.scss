@@ -1,18 +1,19 @@
+@import "../imports";
+
 #About {
   display: flex;
   position: relative;
   flex-flow: column;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   font-size: 1rem;
   user-select: none;
-  color: white;
-  /* background: blue; */
-  /* margin-top: 16vh; */
   min-height: 100%;
-  overflow: visible;
-  padding: 5vmin 10vmin;
+  border: 3px outset #00000025;
+}
+
+#content {
 }
 
 #About .me {

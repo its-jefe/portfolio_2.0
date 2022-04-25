@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter, capitalizeWord } from '../../utils/helpers';
+import React, { useState, useEffect } from 'react';
+import { capitalizeFirstLetter, capitalizeWord } from '../utils/helpers';
 
-import "./style.css"
+import "./Header.scss"
 
 function Header(props) {
   // destructure everything passed in
@@ -11,17 +11,23 @@ function Header(props) {
     setCategory,
   } = props;
 
+  document.onclick = function (e) {
+    console.log(e.target)
+  }
+
   useEffect(() => {
     // on category change...
-    // 1) Update document.title to current category
     document.title = capitalizeFirstLetter(category.name);
   }, [category]);
+
+
+  let aH = window.screen.availHeight
+  let aW = window.screen.availWidth
 
   return (
     <header>
       <section className="name-container">
         <div className="name">
-          <div className="scanner"></div>
           <div className="jeff goldman">JEFF</div>
           <div className="timson-container">TIMSON
             <div className="timson-overlay goldman">TIMSON</div>
@@ -29,15 +35,26 @@ function Header(props) {
           </div>
         </div>
       </section>
-      <nav className="goldman">
-        <ul>
+
+      <nav className="goldman"
+      >
+        <ul id="test"
+          tabindex="0"
+          onFocus={() => {
+            document.getElementById("test").classList.add("test1")
+          }}
+          onBlur={() => {
+            document.getElementById("test").classList.remove("test1")
+          }}
+        >
           {categories.map((category) => (
             <li
               key={category.name}
             >
               <span
-                onClick={() => {
+                onMouseDown={() => {
                   setCategory(category);
+                  (document.getElementById(`${capitalizeFirstLetter(category.name)}`)).scrollIntoView({ behavior: "smooth" })
                 }}
               >
                 {capitalizeWord(category.name)}

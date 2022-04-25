@@ -1,0 +1,114 @@
+@import "../imports";
+
+#Resume {
+  opacity: 0;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 2s ease, background-color 1s ease;
+  font-weight: 100;
+  border: 3px inset #00000025;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 0% 5%; //lowest is 5% highest is 10%
+  //lessen padding on smaller displays
+  
+  // - - - - - - - - - - - - - - -
+  
+  > div {
+    display: flex;
+    flex-direction: column;
+    padding: 2vmin 0vmin;
+    text-align: center;
+    // width: 100%;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.10);
+    // border-left: 1px solid black;
+    // border-right: 1px solid black;
+  }
+  
+  .heading {
+    color: $s75;
+    font-weight: 500;
+    span {
+      display: inline-block;
+      
+      &::first-letter {
+        font-size: 120%;
+      }
+    }
+  }
+  
+  .intro {
+    text-align: justify;
+    // line-height: 120%;
+  }
+  .skills {
+    text-align: center;
+    // line-height: 140%;
+  }
+  .tools {
+    text-align: center;
+  }
+  
+  table {
+    display: flex;
+    width: 100%;
+    margin: 1vh 0vh;
+    display: table;
+    font-size: clamp(12px , 3vw, 14px);
+    text-indent: clamp(-14px , -3vw, -14px);
+    padding-left: clamp(14px , 3vw, 14px);
+    
+    th {
+      display: flex;
+      width: 100%;
+      color: $s80;
+    }
+
+    tr {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      :first-child {
+        // background: rgba(70, 131, 180, 0.185);
+        text-align: left;
+        justify-content: space-between;
+        // white-space: nowrap;
+      }
+      :nth-of-type(2n):not(li) {
+        display: flex;
+        justify-content: flex-end;
+        // background: rgba(180, 70, 70, 0.185);
+        white-space: nowrap;
+        width: max-content;
+        align-content: flex-end;
+      }
+    }
+
+    ul {
+      list-style: none;
+    }
+    li {
+      // line-height: 135%;
+    }
+  }
+
+  .work-experience {
+    tbody {
+      tr:first-child {
+        color: $s80;
+      }
+    }
+  }
+
+  .education {
+    .institution {
+      font-weight: bold;
+    }
+    .location {
+      font-weight: bold;
+    }
+  }
+}

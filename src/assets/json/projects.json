@@ -3,20 +3,20 @@
   [
     {
       "index": 0,
-      "title": "MERN Stack Group Project",
-      "subtitle": "Snake Game (almost)",
+      "title": "Snake Game",
+      "subtitle": "MERN Stack Group Project",
       "repo": "https://github.com/its-jefe/Snak3r",
       "deployment": "https://p3-snake.herokuapp.com/gamepage",
       "details": {
         "summary": "Challenged to create a full MERN stack project we settled on making a snake game. full time jobs and other time constraints left no more than a weekend to create this.",
         "role": "Game component: Logic, design/CSS, and React routing",
-        "tools": "HTML, CSS, JavaScript, Node, React, React-Router"
+        "tools": "HTML, CSS, JavaScript, Node, React"
       }
     },
     {
       "index": 1,
-      "title": "Asynchronous Timers Project",
-      "subtitle": "GameShow",
+      "title": "GameShow",
+      "subtitle": "Asynchronous Timers",
       "repo": "https://github.com/its-jefe/Code-Quiz",
       "deployment": "https://its-jefe.github.io/Code-Quiz/",
       "details": {
@@ -27,8 +27,8 @@
     },
     {
       "index": 2,
-      "title": "Weather API Caller",
-      "subtitle": "Weather Dashboard",
+      "title": "Weather Dashboard",
+      "subtitle": "Weather API Caller",
       "repo": "https://github.com/its-jefe/Weather-Dashboard",
       "deployment": "https://its-jefe.github.io/Weather-Dashboard/",
       "details": {
@@ -76,7 +76,7 @@
     {
       "index": 6,
       "title": "Mars Report",
-      "subtitle": "The Tandem API Group Project",
+      "subtitle": "The Tandem API Caller",
       "repo": "https://github.com/its-jefe/Mars-Report",
       "deployment": "https://its-jefe.github.io/Mars-Report",
       "details": {

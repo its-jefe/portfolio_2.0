@@ -1,0 +1,208 @@
+@import "../imports";
+
+#Projects {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  border: 3px outset #00000025;
+
+
+  .project-card {
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 250px;
+    flex-direction: column;
+    margin: 2%;
+    transition: transform 1000ms, visibility 300ms;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 12.5px;
+    filter: drop-shadow(0 0 2px $s60);
+
+    .spinner {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      color: orange;
+      background-color: $s55;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 1px solid $s45;
+      pointer-events: all;
+      z-index: 3;
+
+      svg {
+        position: absolute;
+        fill: $p25;
+        top: 3px;
+        left: 3px;
+      }
+
+      &:hover {
+        svg {
+          fill: $a50;
+        }
+      }
+
+      &:active {
+        transform: scale(1.05)
+      }
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      border: 1px solid $s45;
+      border-radius: 12.5px;
+      height: 100%;
+      width: 100%;
+      filter: drop-shadow(0 0 1.5px $s75);
+      overflow: hidden;
+
+      .content {
+        background: linear-gradient($p15, $p25);
+      }
+    }
+
+    .front {
+      overflow: hidden;
+      visibility: visible;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      will-change: z-index;
+      transition: z-index 900ms;
+
+      .project-title {
+        display: flex;
+        justify-content: center;
+        font-size: 110%;
+        padding: 1vh 0;
+        color: $s65;
+        text-align: center;
+        text-shadow: 0 0 2px $s35;
+        filter: drop-shadow(0 0 2px $s05);
+      }
+
+      .project-subtitle {
+        display: flex;
+        justify-content: center;
+        background: $s45;
+        color: $p15;
+        padding: 0.25vh;
+        text-align: center;
+        font-size: 95%;
+        // font-weight: 100;
+        filter: drop-shadow(0 0 1px $s75);
+        text-shadow: 0 0 1px $s75;
+      }
+
+      .role {}
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+        margin: 0 10px;
+        font-size: clamp(12px, 80%, 14px);
+
+        .card {
+          width: fit-content;
+          // flex: 0 1 10%;
+          padding: 3px;
+          margin: 6px 9px;
+          color: $s95;
+          font-weight: 300;
+          border: 1.5px solid transparentize($color: $s45, $amount: 0.9);
+          background: transparentize($color: $s45, $amount: 0.75);
+          border-radius: 6.25px;
+        }
+      }
+
+      .summary {
+        display: flex;
+        flex-direction: column;
+        padding: 1vmax;
+        font-family: firacode;
+        font-weight: 400;
+      }
+    }
+
+    .back {
+      // overflow: hidden;
+      z-index: 0;
+      will-change: z-index;
+      transition: z-index 900ms;
+      transform: rotateY(0.5turn);
+      -moz-transform: rotateY(0.5turn);
+      -webkit-transform: rotateY(0.5turn);
+      -o-transform: rotateY(0.5turn);
+      -ms-transform: rotateY(0.5turn);
+
+      .iframe-container {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        user-select: none;
+        pointer-events: none;
+
+        // .iframe-nav {
+        //   position: absolute;
+        //   display: block;
+        //   height: auto;
+        //   width: auto;
+        //   background: rgba(255, 0, 0, 0.32);
+        //   height: 100%;
+        //   width: 100%;
+
+        //   border: 1px solid greenyellow;
+        // }
+
+        iframe {
+          display: table-cell;
+          width: 100%;
+          height: 82%;
+          border: none;
+          border: 2px solid black;
+          background: white;
+          // need to add mix blend mode : difference to negate night mode
+          // mix-blend-mode: difference;
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      // background: $p95;
+    }
+  }
+
+  .test2 {
+    // rotates project-card when this class is applied
+    transform: rotateY(0.5turn);
+
+    .front {
+      z-index: 0;
+    }
+
+    .back {
+      z-index: 1;
+    }
+
+    .spinner {
+      z-index: 5;
+    }
+  }
+}

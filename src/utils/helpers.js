@@ -23,3 +23,16 @@ export function filterRepos(repos) {
   });
   return ret;
 }
+
+export function customParser(val, index, arrLength) {
+  if(index !== arrLength-1){
+    return `${val}, `
+  }else{
+    return `${val}`  }
+}
+
+export function string2Array(string) {
+  let ret = string.split(",")
+  let ret2 = ret.map(r => r.trim())
+  return ret2
+}

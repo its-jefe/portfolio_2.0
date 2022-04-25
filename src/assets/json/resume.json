@@ -3,10 +3,10 @@
     "Inquisitive and efficient Junior Full Stack Web Developer with a focus on smart algorithms and interactive user experiences. Certified in Full Stack Web Development, Python, IT Support and pursuing a bachelor’s degree in Computer Science. Inspired by the possibilities that new technologies and innovation bring with a lifelong love for learning and compounding knowledge. Proficient in the MERN Stack and looking for a role in which to learn, grow, and contribute."
   ],
   "skills": [
-    "Node, React, React-Router, Redux, Express, JavaScript (ES6), C, Python, MongoDB, Mongoose, GraphQL, MySQL, Sequelize, HTML, CSS, SASS/SCSS, Bootstrap, REST Architecture, APIs, JSON, Agile Methodologies, MVC Pattern, Data Structures, Algorithms, Regex, Object Oriented Programming, Progressive Web Applications, Test Driven Development, Jest Testing, Lighthouse Testing, Git, Git Flow, Site Reliability Engineering, Search Engine Optimization, Virtual Machiness, Command Line Interface"
+    "APIs, Agile Methodologies, Algorithms, Bootstrap, BrightScript (Roku), C, CSS, Command Line Interface (CLI), Data Structures, Express, Git, Git Flow, GraphQL, HTML, JSON, JavaScript (ES6), Jest Testing, MVC Pattern, MongoDB, Mongoose, MySQL, Node, Object Oriented Programming (OOP), Progressive Web Applications (PWAs), Python, REST Architecture, React, React-Router, Redux, Regex, SASS/SCSS, Search Engine Optimization (SEO), Sequelize, Site Reliability Engineering (SRE), Test Driven Development (TDD)"
   ],
   "tools": [
-    "MacOS, Windows, Google Chrome, Safari, Firefox, GitHub, Firebase, Heroku, Adobe Illustrator, Figma, Microsoft Office, Google Suite"
+    "Adobe Illustrator, Figma, Firebase, Firefox, GitHub, Google Chrome, Google Suite, Heroku, Lighthouse Testing, MacOS, Microsoft Office, Safari, Virtual Machines (VMs), Windows"
   ],
   "work": [
     {
@@ -36,45 +36,42 @@
   "education": [
     {
       "institution": "University of Central Florida",
+      "location": "Orlando, Florida",
       "studies": [
         {
           "program": "Certificate – Full Stack Web Development (240 Hours + 17 Projects)",
-          "location": "Orlando, Florida",
           "dates": "04/2021 – 09/2021"
         },
         {
           "program": "Bachelor of Science – Computer Science (Pursuant)",
-          "location": "Orlando, Florida",
           "dates": "08/2020 – Present"
         }
       ]
     },
     {
       "institution": "Grow with Google",
+      "location": "Online",
       "studies": [
         {
           "program": "Certificate – Crash Course on Python",
-          "location": "Online",
           "dates": "03/2021 – 04/2021"
         },
         {
           "program": "Certificate – IT Support",
-          "location": "Online",
           "dates": "10/2020 – 02/2021"
         }
       ]
     },
     {
       "institution": "Valencia College",
+      "location": "Orlando, Florida",
       "studies": [
         {
-          "program": "Certificate – Crash Course on Python",
-          "location": "Orlando, Florid",
+          "program": "Associate of Arts – General Studies",
           "dates": "08/2018 – 07/2020"
         },
         {
-          "program": "Certificate – IT Support",
-          "location": "Orlando, Florid",
+          "program": "Associate of Science – Sound and Music Technology",
           "dates": "08/2013 – 08/2016"
         }
       ]
