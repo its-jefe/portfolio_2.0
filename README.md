@@ -10,7 +10,3 @@ A home for my projects to sit in a more presentable way.
 - Firebase `Cloud Functions`
 
 Deployed to [Firebase](https://jeff-timson.dev)
-
-
-
-![Stay Classy](./src/assets/Stay_Classy.gif)
