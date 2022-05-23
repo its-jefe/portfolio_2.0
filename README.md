@@ -1,6 +1,13 @@
-# Codebase of my Portfolio
+# Codebase of my Portfolio Page
 
-### Didn't write a readme but if you're here for some code, have at it. 😎
+A home for my projects to sit in a more presentable way.
+
+### Implementing 
+- `React`
+- `Three.js`
+- `CSS Animations`
+- `Firebase`
+- Firebase `Cloud Functions`
 
 Deployed with [Firebase](https://jeff-timson.dev)
 
