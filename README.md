@@ -1,9 +1,16 @@
-# Codebase of my Portfolio
+# Codebase of my Portfolio Page
 
-### Didn't write a readme but if you're here for some code, have at it. 😎
+A home for my projects to sit in a more presentable way.
 
-Deployed with [Firebase](https://jeff-timson.dev)
+### Implementing 
+- `Node.js`
+- `React`
+- `Three.js`
+- `CSS Animations`
+- `Firebase`
 
-Stay classy
+### In tandem with [My 2021 Skyline](https://github.com/its-jefe/My-2021-Skyline)
+- Firebase `Cloud Functions`
+- Express
 
- ![Stay Classy](./src/assets/Stay_Classy.gif)
+Deployed to [Firebase](https://jeff-timson.dev)
