@@ -14,10 +14,13 @@
   overflow-y: visible;
   padding: 0% 5%; //lowest is 5% highest is 10%
   //lessen padding on smaller displays
-  
+
+
+  font-size: clamp(13px, 3vw, 18px);
+
   // - - - - - - - - - - - - - - -
-  
-  > div {
+
+  >div {
     display: flex;
     flex-direction: column;
     padding: 2vmin 0vmin;
@@ -27,29 +30,34 @@
     // border-left: 1px solid black;
     // border-right: 1px solid black;
   }
-  
+
   .heading {
     color: $s75;
     font-weight: 500;
+
     span {
       display: inline-block;
-      
+
       &::first-letter {
         font-size: 120%;
       }
     }
   }
-  
+
   .intro {
     text-align: justify;
     // line-height: 120%;
+    // font-size: clamp(13px, 3vw, 15px);
   }
+
   .skills {
     text-align: center;
-    // line-height: 140%;
+    // font-size: clamp(13px, 3vw, 15px);
   }
+
   .tools {
     text-align: center;
+    // font-size: clamp(13px, 3vw, 15px);
   }
   
   table {
@@ -57,10 +65,8 @@
     width: 100%;
     margin: 1vh 0vh;
     display: table;
-    font-size: clamp(12px , 3vw, 14px);
-    text-indent: clamp(-14px , -3vw, -14px);
-    padding-left: clamp(14px , 3vw, 14px);
-    
+    // WORK ON THIS INDENT .. WTF 
+
     th {
       display: flex;
       width: 100%;
@@ -70,13 +76,18 @@
     tr {
       display: flex;
       width: 100%;
+      flex-grow: 1;
       justify-content: space-between;
-      :first-child {
+
+      :first-child:not(th) {
         // background: rgba(70, 131, 180, 0.185);
         text-align: left;
         justify-content: space-between;
-        // white-space: nowrap;
+        width: fit-content;
+        white-space: pre-wrap;
+        margin-right: clamp(13px, 3vw, 15px);
       }
+
       :nth-of-type(2n):not(li) {
         display: flex;
         justify-content: flex-end;
@@ -90,23 +101,36 @@
     ul {
       list-style: none;
     }
+
+  }
+  li {
+    // line-height: 135%;
+    text-indent: clamp(-16px, -3.5vw, -17px);
+    padding-left: clamp(-16px, -3.5vw, -17px);
+  }
+  
+  .work-experience {
+    tr:first-child {
+      color: $s80;
+    }
+    tbody {
+      font-size: 95%;
+    }
+  }
+  
+  .education {
+    tbody {
+      font-size: 95%;
+    }
     li {
       // line-height: 135%;
+      text-indent: clamp(-16px, -3.5vw, -17px);
+      padding-left: clamp(-16px, -3.5vw, -17px);
     }
-  }
-
-  .work-experience {
-    tbody {
-      tr:first-child {
-        color: $s80;
-      }
-    }
-  }
-
-  .education {
     .institution {
       font-weight: bold;
     }
+    
     .location {
       font-weight: bold;
     }

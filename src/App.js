@@ -59,6 +59,7 @@ function App() {
       styleObj: { background: "transparent" },
     }
   )
+
   const toggleTheme = () => {
     if (theme.setting === "dark") {
       // toggle
@@ -77,19 +78,19 @@ function App() {
         {
           setting: "dark",
           img: newmoonface,
-          styleObj: { background: "transparent" }
+          styleObj: { background: "transparent" },
         }
       )
     }
   }
 
   useEffect(() => {
-    console.log("H:" + window.innerHeight + "px  W:" + window.innerWidth + "px")
-    console.log(windowHeight + windowWidth)
+    // console.log("H:" + window.innerHeight + "px  W:" + window.innerWidth + "px")
+    // console.log(windowHeight + windowWidth)
 
     // if Portrait
     if (window.innerHeight > window.innerWidth) {
-      console.log("portrait")
+      // console.log("portrait")
       setMainStyle(
         {
           // fontSize: "100%",
@@ -97,7 +98,7 @@ function App() {
         })
       // else Landscape
     } else {
-      console.log("landscape")
+      // console.log("landscape")
       setMainStyle(
         {
           // fontSize: (windowHeight + windowWidth / 18) + "px",
@@ -118,10 +119,6 @@ function App() {
     console.log("scolling")
   }
 
-  console.log(
-    document.getElementById("veil-toggle")
-  )
-
   // Pop and push from category array into Nav 
   return (
     <div id="App">
@@ -140,7 +137,9 @@ function App() {
       // onScroll={headerAdjuster}
       >
         <About></About>
-        <Projects></Projects>
+        <Projects
+        styleObj={theme.styleObj}
+        ></Projects>
         <Resume></Resume>
         {/* <Router> */}
         {/* <Switch> */}

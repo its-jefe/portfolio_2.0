@@ -45,5 +45,8 @@
     ]
   },
   "author": "Jeff Timson",
-  "homepage": "https://jeff-timson.dev"
+  "homepage": "https://jeff-timson.dev",
+  "engines": {
+    "node": "16"
+  }
 }

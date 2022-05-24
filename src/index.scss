@@ -45,7 +45,7 @@ body {
   mix-blend-mode: difference;
   user-select: none;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 #veil-toggle {
@@ -55,19 +55,19 @@ body {
   height: fit-content;
   width: fit-content;
   padding-left: 0.5vw;
-  z-index: 3;
-
+  z-index: 2;
+  
   img {
     position: fixed;
     will-change: bottom;
     transition: bottom 600ms linear;
-
+    
     height: 40px;
     width: 40px;
-
+    
     bottom: -20px;
   }
-
+  
   &:hover {
     img {
       bottom: 0.5vh;
@@ -76,11 +76,26 @@ body {
 }
 header,
 footer {
-  background: $p15;
+  display: flex;
+  
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  
+  background: $p20;
+  filter: drop-shadow(0 0 2px $s60);
+
+  transition: all 300ms linear;
+
+}
+footer {
+
 }
 
 #banner {
   position: absolute;
+  user-select: none;
+  pointer-events: none;
   top: 0;
   left: 0;
   display: table;
@@ -97,15 +112,11 @@ footer {
   padding-right: 0.03rem;
   letter-spacing: 0px;
   font-weight: 900;
+  font-size: 11px;
 }
-
-h1 {
-  font-size: clamp(1vmin, 1.5vmax, 11.5px);
-}
-
 
 #Projects {
-  background: $p35;
+  background: $p30;
 }
 
 main {
@@ -135,7 +146,7 @@ main {
   }
 
   section {
-    padding: 3vmin;
+    padding: 20px;
   }
 }
 
@@ -144,8 +155,8 @@ main {
   flex-direction: row;
 }
 .flex-col {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .cover-photo {

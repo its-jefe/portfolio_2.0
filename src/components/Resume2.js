@@ -97,7 +97,13 @@ function Resume() {
             <tbody>
               {(education.studies).map((study, index) => (
                 <tr key={index}>
-                  <td>• {study.program}</td>
+                  <td>
+                    <ul>
+                      <li>
+                        • {study.program}
+                      </li>
+                    </ul>
+                  </td>
                   <td>{study.dates}</td>
                 </tr>
               ))}

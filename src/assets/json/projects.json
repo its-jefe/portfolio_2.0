@@ -3,85 +3,85 @@
   [
     {
       "index": 0,
-      "title": "Snake Game",
-      "subtitle": "MERN Stack Group Project",
-      "repo": "https://github.com/its-jefe/Snak3r",
-      "deployment": "https://p3-snake.herokuapp.com/gamepage",
+      "title": "freckle. beauty",
+      "subtitle": "Landing Page",
+      "repo": "",
+      "deployment": "https://freckle-beauty.com",
       "details": {
-        "summary": "Challenged to create a full MERN stack project we settled on making a snake game. full time jobs and other time constraints left no more than a weekend to create this.",
-        "role": "Game component: Logic, design/CSS, and React routing",
-        "tools": "HTML, CSS, JavaScript, Node, React"
+        "role": "Full design and development",
+        "summary": "Contracted to design & administer a simple landing page and email server for eCommerce company 'freckle. beauty'. ",
+        "tools": "HTML, CSS, JavaScript, Node, React, Firebase"
       }
     },
     {
       "index": 1,
+      "title": "Snake Head",
+      "subtitle": "MERN Group Project",
+      "repo": "https://github.com/its-jefe/Snak3r",
+      "deployment": "https://p3-snake.herokuapp.com/gamepage",
+      "details": {
+        "role": "Game component design & development",
+        "summary": "Responsible for the design and implementation of the Game Component and hosting on Heroku. Handled the frame rate (fps) using timers.",
+        "tools": "HTML, CSS, JavaScript, Node, React, Heroku"
+      }
+    },
+    {
+      "index": 2,
       "title": "GameShow",
       "subtitle": "Asynchronous Timers",
       "repo": "https://github.com/its-jefe/Code-Quiz",
       "deployment": "https://its-jefe.github.io/Code-Quiz/",
       "details": {
-        "summary": "Basic quiz game applying JS logic and fun CSS animation",
-        "role": "Sole author",
+        "summary": "Silly quiz game implementing timers, DOM manipulation, local storage, JS logic, and CSS animation. All with a kitschy backdrop created in Adobe Illustrator.",
+        "role": "Full design & development",
         "tools": "JavaScript, CSS, HTML, Adobe Illustrator"
       }
     },
     {
-      "index": 2,
+      "index": 3,
       "title": "Weather Dashboard",
       "subtitle": "Weather API Caller",
       "repo": "https://github.com/its-jefe/Weather-Dashboard",
       "deployment": "https://its-jefe.github.io/Weather-Dashboard/",
       "details": {
-        "summary": "Desgined the front end based on a mock photo and then implemented the OpenWeather API on the backend to get the weather of searched cities.",
-        "role": "Sole author",
+        "summary": "Desgined the front end based on a provided mock-up and then implemented the OpenWeather API on the backend to get the weather of searched cities.",
+        "role": "Front-end with notes & full back-end development",
         "tools": "HTML, CSS, JavaScript, API, Bootstrap"
       }
     },
     {
-      "index": 3,
+      "index": 4,
       "title": "Password Generator",
-      "subtitle": "The Password Algorithm",
+      "subtitle": "Password Algorithm",
       "repo": "https://github.com/its-jefe/Password-Generator",
       "deployment": "https://its-jefe.github.io/Password-Generator/",
       "details": {
-        "summary": "App that generates a random password based on user-selected criteria.",
-        "role": "Sole Author: Wrote the Javascript code to generate passcodes and added password criteria selection",
+        "summary": "Generates a random password based on user-selected criteria. Provided with a basic layout and CSS, I added criteria checkboxes and wrote the random generation logic in JavaScript.",
+        "role": "Full back-end & added front-end features",
         "tools": "HTML, CSS, JavaScript"
       }
     },
     {
-      "index": 4,
+      "index": 5,
       "title": "Note Taker",
-      "subtitle": "The Express.js Back-End ",
+      "subtitle": "Express.js Back-End ",
       "repo": "https://github.com/its-jefe/Note-Taker",
       "deployment": "https://young-harbor-02832.herokuapp.com/",
       "details": {
-        "summary": "Write, save, and delete notes! This application uses an Express.js back-end to save and retrieve note data from a JSON file.",
-        "role": "Sole Author: I wrote the back-end, connected the front-end, and then deployed the application to Heroku.",
+        "summary": "Write, save, and delete notes! Uses an Express.js back-end to save and retrieve note data from a JSON file. I wrote the back-end, connected REST endpoints, and then deployed the application to Heroku.",
+        "role": "Full back-end development & routing",
         "tools": "Javascript, ExpressJS, API, CSS, HTML"
       }
     },
     {
-      "index": 5,
-      "title": "Budget Tracker",
-      "subtitle": "The PWA",
-      "repo": "https://github.com/its-jefe/Budget-Tracker",
-      "deployment": "https://fudge-it-budgit.herokuapp.com/",
-      "details": {
-        "summary": "A budget tracker linked to a MongoDB backend, that once downloaded, works offline and updates the database once connection is regained. I still need to work on offline functionality when not downloaded...",
-        "role": "Sole author: My first progressive web application! Took a functioning budget tracker and made it a PWA",
-        "tools": "HTML, CSS, Javascript, ExpressJS, Mongoose"
-      }
-    },
-    {
-      "index": 6,
+      "index": 7,
       "title": "Mars Report",
-      "subtitle": "The Tandem API Caller",
+      "subtitle": "Tandem API Group Project",
       "repo": "https://github.com/its-jefe/Mars-Report",
       "deployment": "https://its-jefe.github.io/Mars-Report",
       "details": {
-        "summary": "Used the Nasa Mars Weather Service API to get the weather on Mars! Then allows the user to pick a date and a rover to get corresponding photos on the chosen date from the chosen rover using Nasas Mars Rover Photos API.",
-        "role": "Group Project: I learned Tailwind CSS to handle the CSS. Also worked heavily on the API calls and backend functionality. Also messed with keyframes and adobe illustrator to add the spaceship",
+        "summary": "Get the forecast on Mars! Using the Nasa Mars Weather Service API and Mars Rover Photos API; allows the user to pick a date and rover to get corresponding photos.",
+        "role": "Tailwind, API calls, back-end, & spaceship",
         "tools": "JavaScript, Tailwind, CSS, HTML, Adobe Illustrator"
       }
     }

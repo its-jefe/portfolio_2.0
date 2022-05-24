@@ -38,13 +38,13 @@ function Header(props) {
 
       <nav className="goldman"
       >
-        <ul id="test"
-          tabindex="0"
+        <ul id="condensed-nav-getter"
+          tabIndex="0"
           onFocus={() => {
-            document.getElementById("test").classList.add("test1")
+            document.getElementById("condensed-nav-getter").classList.add("test1")
           }}
           onBlur={() => {
-            document.getElementById("test").classList.remove("test1")
+            document.getElementById("condensed-nav-getter").classList.remove("test1")
           }}
         >
           {categories.map((category) => (

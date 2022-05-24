@@ -9,7 +9,7 @@
   height: fit-content;
   width: 100%;
   border: 3px outset #00000025;
-
+  user-select: none;
 
   .project-card {
     position: relative;
@@ -18,11 +18,13 @@
     width: 250px;
     flex-direction: column;
     margin: 2%;
-    transition: transform 1000ms, visibility 300ms;
+    transition:
+      transform 1000ms ease;
     overflow: hidden;
-    background-color: red;
     border-radius: 12.5px;
-    filter: drop-shadow(0 0 2px $s60);
+    filter: drop-shadow(0 0 1.5px $s55);
+    will-change: transform;
+    color: $s80;
 
     .spinner {
       position: absolute;
@@ -33,13 +35,16 @@
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      border: 1px solid $s45;
+      border: 2px solid $s55;
       pointer-events: all;
-      z-index: 3;
+      will-change: transform, z-index;
+      filter: drop-shadow(0 0 1.5px $s55);
+
+      z-index: 2;
 
       svg {
         position: absolute;
-        fill: $p25;
+        fill: $p30;
         top: 3px;
         left: 3px;
       }
@@ -57,89 +62,117 @@
 
     .front,
     .back {
+      will-change: z-index;
       position: absolute;
-      border: 1px solid $s45;
-      border-radius: 12.5px;
+      border: 5px solid $s55;
+      border-color: transparentize($color: $s55, $amount: 0.85);
       height: 100%;
       width: 100%;
-      filter: drop-shadow(0 0 1.5px $s75);
+      filter: drop-shadow(0 0 1px $s75);
       overflow: hidden;
+      border-radius: 12.5px;
+      color: $s85;
+
+      .badge {
+        height: fit-content;
+        width: fit-content;
+        padding: 1px 2px;
+        margin: 5px 5px;
+        font-weight: 300;
+        background: transparentize($color: $s45, $amount: 0.85);
+        border-radius: 6.25px;
+        border: 1.5px solid transparentize($color: $s75, $amount: 0.5);
+      }
 
       .content {
-        background: linear-gradient($p15, $p25);
+        background-image: linear-gradient($p15, $p25);
       }
+
     }
 
     .front {
-      overflow: hidden;
       visibility: visible;
-      height: 100%;
-      width: 100%;
       z-index: 1;
       will-change: z-index;
-      transition: z-index 900ms;
+      transition: z-index 1000ms ease;
+      text-shadow: 0 0 3px $s35;
+      text-shadow: 0 0 1px white;
 
       .project-title {
         display: flex;
         justify-content: center;
-        font-size: 110%;
+        font-size: 20px;
         padding: 1vh 0;
         color: $s65;
         text-align: center;
-        text-shadow: 0 0 2px $s35;
         filter: drop-shadow(0 0 2px $s05);
       }
 
       .project-subtitle {
+        position: relative;
         display: flex;
         justify-content: center;
-        background: $s45;
+        background: $s55;
+        // height: 23px;
         color: $p15;
         padding: 0.25vh;
         text-align: center;
-        font-size: 95%;
-        // font-weight: 100;
+        font-size: 15px;
+        font-weight: 900;
         filter: drop-shadow(0 0 1px $s75);
-        text-shadow: 0 0 1px $s75;
       }
 
-      .role {}
-
-      .tools {
+      .tool-badge-container {
         display: flex;
         flex-wrap: wrap;
+        height: fit-content;
         justify-content: center;
-        padding: 10px 0;
-        margin: 0 10px;
-        font-size: clamp(12px, 80%, 14px);
-
-        .card {
-          width: fit-content;
-          // flex: 0 1 10%;
-          padding: 3px;
-          margin: 6px 9px;
-          color: $s95;
-          font-weight: 300;
-          border: 1.5px solid transparentize($color: $s45, $amount: 0.9);
-          background: transparentize($color: $s45, $amount: 0.75);
-          border-radius: 6.25px;
-        }
+        font-size: 13px;
+        padding-top: 0px;
+        font-weight: 500;
+        word-spacing: -3px;
       }
 
-      .summary {
+      .role {
         display: flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        border: 1px solid transparentize($color: $p65, $amount: 0.25);
+        border-radius: 6.25px;
+        padding: 4px 16px;
+        margin: 10px 2px 7px 2px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        word-spacing: -0.5px;
+        font-weight: 300;
+        background: transparentize($color: $p65, $amount: 0.85), ;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .details {
+        display: flex;
+        flex-grow: 3;
+        border-radius: 6.25px;
+        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
-        padding: 1vmax;
-        font-family: firacode;
-        font-weight: 400;
+        padding: 6px 10px;
+        background: linear-gradient(transparentize($color: $s65, $amount: 0.85),
+            transparentize($color: black, $amount: 0.99));
+        margin: 2px;
+        font-size: 15px;
+        line-height: 17px;
+        word-spacing: 0px;
+        font-weight: 300;
       }
     }
 
     .back {
-      // overflow: hidden;
       z-index: 0;
       will-change: z-index;
-      transition: z-index 900ms;
+      transition: z-index 1000ms ease;
       transform: rotateY(0.5turn);
       -moz-transform: rotateY(0.5turn);
       -webkit-transform: rotateY(0.5turn);
@@ -148,50 +181,116 @@
 
       .iframe-container {
         position: relative;
-        display: table;
         width: 100%;
         height: 100%;
-        overflow: hidden;
         user-select: none;
         pointer-events: none;
-
-        // .iframe-nav {
-        //   position: absolute;
-        //   display: block;
-        //   height: auto;
-        //   width: auto;
-        //   background: rgba(255, 0, 0, 0.32);
-        //   height: 100%;
-        //   width: 100%;
-
-        //   border: 1px solid greenyellow;
-        // }
+        overflow: hidden;
+        background: none;
 
         iframe {
-          display: table-cell;
+          z-index: 1;
+          position: relative;
+          height: 315px;
+          background: none;
           width: 100%;
-          height: 82%;
-          border: none;
-          border: 2px solid black;
-          background: white;
+          border: double 3px $s45;
           // need to add mix blend mode : difference to negate night mode
-          // mix-blend-mode: difference;
+          border-radius: 7.5px;
+          overflow: hidden;
+        }
+
+        .iframe-veil {
+          content: "";
+          position: absolute;
+          z-index: 5;
+          height: 315px;
+          width: 100%;
+          // background: blue;
+          mix-blend-mode: difference;
+          border-radius: 7.5px;
+          will-change: background-color;
+          transition: background-color 900ms linear;
+          // overflow: hidden;
+          border: double 3px $s50;
+        }
+
+        .iframe-nav {
+          display: flex;
+          pointer-events: all;
+          width: 90%;
+          overflow: visible;
+          margin: 0% auto;
+          display: flex;
+
+          a {
+            flex-grow: 1;
+            transition: color 300ms linear, filter 300ms linear, text-decoration 300ms ease;
+            text-decoration: none;
+            font-weight: 400;
+            color: $s85;
+            text-align: center;
+            height: fit-content;
+            padding: 1px 0px;
+            margin: 6px 0px;
+            border-radius: 6.25px;
+            border: 1.5px outset transparentize($color: $s75, $amount: 0.2);
+            background: transparentize($color: $s45, $amount: 0.85);
+            font-size: clamp(15px, 80%, 18px);
+
+            &:hover {
+              color: $a65;
+              filter: drop-shadow(0px 0px 0.5px $a75);
+              transform: scale3d(1.01);
+              text-decoration: underline;
+            }
+
+            &:active {
+              border-style: inset;
+              border-color: $a65;
+              ;
+            }
+          }
+
+          .deployment {
+            border-radius: 6.25px 0px 0px 6.25px;
+          }
+
+          .center {
+            width: 1px;
+            height: 95px;
+          }
+
+          .repo {
+            border-radius: 0px 6.25px 6.25px 0px;
+          }
         }
       }
     }
 
     .content {
-      position: relative;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
       height: 100%;
       width: 100%;
       overflow: hidden;
-      // background: $p95;
+      padding: 2.5%;
     }
   }
 
   .test2 {
-    // rotates project-card when this class is applied
+    transition:
+      transform 1000ms ease;
     transform: rotateY(0.5turn);
+
+    .spinner {
+      z-index: 3;
+
+      svg {
+        z-index: 5;
+      }
+    }
 
     .front {
       z-index: 0;
@@ -199,10 +298,6 @@
 
     .back {
       z-index: 1;
-    }
-
-    .spinner {
-      z-index: 5;
     }
   }
 }

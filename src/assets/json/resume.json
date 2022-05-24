@@ -3,10 +3,10 @@
     "Inquisitive and efficient Junior Full Stack Web Developer with a focus on smart algorithms and interactive user experiences. Certified in Full Stack Web Development, Python, IT Support and pursuing a bachelor’s degree in Computer Science. Inspired by the possibilities that new technologies and innovation bring with a lifelong love for learning and compounding knowledge. Proficient in the MERN Stack and looking for a role in which to learn, grow, and contribute."
   ],
   "skills": [
-    "APIs, Agile Methodologies, Algorithms, Bootstrap, BrightScript (Roku), C, CSS, Command Line Interface (CLI), Data Structures, Express, Git, Git Flow, GraphQL, HTML, JSON, JavaScript (ES6), Jest Testing, MVC Pattern, MongoDB, Mongoose, MySQL, Node, Object Oriented Programming (OOP), Progressive Web Applications (PWAs), Python, REST Architecture, React, React-Router, Redux, Regex, SASS/SCSS, Search Engine Optimization (SEO), Sequelize, Site Reliability Engineering (SRE), Test Driven Development (TDD)"
+    "Android, APIs, Agile Methodologies, Algorithms, Bootstrap, BrightScript (Roku), C, CSS, Command Line Interface (CLI), Data Structures, Express, Git, GraphQL, HTML, IE, IT Security, Java, JavaScript (ES6), Jest Testing, JSON, MVC Pattern, MongoDB, Mongoose, MySQL, Node.js, Object Oriented Programming (OOP), Progressive Web Applications (PWAs), Python, REST Architecture, React, Regex, SASS/SCSS, Search Engine Optimization (SEO), Sequelize, Site Reliability Engineering (SRE), Test Driven Development (TDD)"
   ],
   "tools": [
-    "Adobe Illustrator, Figma, Firebase, Firefox, GitHub, Google Chrome, Google Suite, Heroku, Lighthouse Testing, MacOS, Microsoft Office, Safari, Virtual Machines (VMs), Windows"
+    "Adobe Illustrator, Chrome, Edge, Figma, Firebase, Firefox, G Suite, GitHub, Google Admin, Heroku, Lighthouse Testing, MacOS, Microsoft Azure, Microsoft Office, Node Version Manager (NVM), Safari, Virtual Machines (VMs), Windows"
   ],
   "work": [
     {
@@ -36,14 +36,14 @@
   "education": [
     {
       "institution": "University of Central Florida",
-      "location": "Orlando, Florida",
+      "location": "Online",
       "studies": [
         {
           "program": "Certificate – Full Stack Web Development (240 Hours + 17 Projects)",
           "dates": "04/2021 – 09/2021"
         },
         {
-          "program": "Bachelor of Science – Computer Science (Pursuant)",
+          "program": "Bachelors Degree - Computer Science",
           "dates": "08/2020 – Present"
         }
       ]

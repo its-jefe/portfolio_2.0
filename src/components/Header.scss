@@ -2,26 +2,18 @@
 
 header {
   position: relative;
-  height: fit-content;
   width: 100%;
-  display: flex;
-  align-items: center;
-  font-weight: 100;
+  height: fit-content;
   padding: 7px 20px;
-  z-index: 2;
-  filter: drop-shadow(0 0 2px $s60);
   user-select: none;
-  transition: all 300ms linear;
+  z-index: 1;
 
   .name-container {
     display: table;
     width: fit-content;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: transparent;
     line-height: 0.7;
-    mix-blend-mode: lighten;
-
+    
     .name {
       display: table-cell;
       flex-flow: column;
@@ -46,17 +38,26 @@ header {
       background-size: 100% 0%;
       background-position: top;
       background-repeat: no-repeat;
-      will-change: background-size, filter;
+
+      filter: drop-shadow(0 0 1px black);
+
+      will-change:
+        background-size,
+        filter;
       transition: background-size 665ms linear 460ms, filter 1000ms linear 420ms,
         text-shadow 1000ms linear 350ms;
     }
 
     .timson-container {
+      filter: drop-shadow(0px 0px 1px black);
       position: relative;
       font-size: 170%;
       font-weight: 100;
-      color: transparent;
       // this hides placeholder text for element size
+      color: transparent;
+      transition: background-size 216ms linear 300ms, filter 850ms linear,
+        text-shadow 850ms linear;
+      will-change: background-size, filter, text-shadow;
     }
 
     .timson-overlay {
@@ -73,6 +74,7 @@ header {
       background-position: top;
       background-repeat: no-repeat;
       z-index: 1;
+      will-change: background-size, text-shadow;
       transition: background-size 216ms linear 300ms, filter 850ms linear,
         text-shadow 850ms linear;
     }
@@ -88,6 +90,7 @@ header {
       background-size: 100% 0%;
       background-position: top;
       background-repeat: no-repeat;
+      will-change: background-size, filter, text-shadow;
       transition: background-size 432ms linear 80ms, filter 700ms linear,
         text-shadow 700ms linear;
     }
@@ -100,25 +103,31 @@ header {
         transition: background-size 665ms linear, filter 665ms linear,
           text-shadow 665ms linear;
         background-size: 100% 100%;
-        filter: drop-shadow(0px 0px 0.2vh $a75);
-        text-shadow: 0 0 0.001vh $p05;
+        filter: drop-shadow(0px 0px 1px $a75);
+        // text-shadow: 0 0 0.001px $p05;
+      }
+
+      .timson-container {
+        transition: background-size 216ms linear 600ms,
+          filter 500ms linear 600ms, text-shadow 500ms linear 600ms;
+        filter: drop-shadow(0px 0px 1px $a75);
       }
 
       .timson-overlay {
+        // filter: drop-shadow(0 0 0.25vh rgba(247, 255, 128, 0));
+        /* need to hide or it doubles up if not using the container for filtering */
         transition: background-size 216ms linear 600ms,
           filter 500ms linear 600ms, text-shadow 500ms linear 600ms;
         background-size: 100% 100%;
-        filter: drop-shadow(0 0 0.25vh rgba(247, 255, 128, 0));
-        /* need to hide or it doubles up */
-        text-shadow: 0 0 0.001vh $p05;
+        // text-shadow: 0 0 0.001px $p05;
       }
 
       .timson-underlay {
         transition: background-size 432ms linear 600ms,
           filter 500ms linear 600ms, text-shadow 500ms linear 600ms;
         background-size: 100% 100%;
-        filter: drop-shadow(0px 0px 0.2vh $a75);
-        text-shadow: 0 0 0.001vh $p05;
+        // filter: drop-shadow(0px 0px 0.2vh $a75);
+        // text-shadow: 0 0 0.001vh $p05;
       }
     }
   }
@@ -149,22 +158,15 @@ header {
     li {
       color: $s60;
       // height: fit-content;
-      will-change: color, transform, mix-blend-mode, height, width, top, font-size, background-color;
-      -webkit-filter: drop-shadow(0 0 0.05vh transparent);
-      filter: drop-shadow(0px 0px 0.05vh transparent);
-      text-shadow: 0 0 1px $p05;
+      will-change: color, transform, height, width, top, font-size, background-color;
+      // -webkit-filter: drop-shadow(0 0 1px black);
+      // filter: drop-shadow(0px 0px 1px black);
+      text-shadow: 0 0 2px black;
+      transition: color 300ms linear;
 
       &:hover {
-        // cursor: pointer;
-        transition: mix-blend-mode 1s linear;
+        text-shadow: 0px 0px 2px $s75;
         color: $a65;
-        text-shadow: 0 0 1px $p05, 0 0 2px $p05;
-
-        @media (width > 701px) {
-          mix-blend-mode: hard-light;
-          -webkit-filter: drop-shadow(0 0 0.05vh $s75);
-          filter: drop-shadow(0px 0px 0.05vh $s75);
-        }
       }
 
       @media (width > 701px) {
@@ -203,16 +205,15 @@ header {
           overflow: hidden;
           background-color: $s60;
           pointer-events: none;
-          -webkit-filter: drop-shadow(0 0 0.05vh transparent);
-          filter: drop-shadow(0px 0px 0.05vh transparent);
-          text-shadow: 0 0 1px transparent;
+          // -webkit-filter: drop-shadow(0 0 0.05vh transparent);
+          // filter: drop-shadow(0px 0px 0.05vh transparent);
+          text-shadow: 0 0 2px black;
         }
 
         li:nth-of-type(1) {
           transition:
             top 200ms ease,
             font-size 0ms ease,
-            height 200ms ease,
             width 200ms ease,
             background-color 200ms linear;
         }
@@ -221,7 +222,6 @@ header {
           transition:
             top 400ms ease,
             font-size 0ms ease,
-            height 400ms ease,
             width 400ms ease,
             background-color 400ms linear;
         }
@@ -230,7 +230,6 @@ header {
           transition:
             top 600ms ease,
             font-size 0ms ease,
-            height 600ms ease,
             width 600ms ease,
             background-color 600ms linear;
         }
@@ -239,7 +238,6 @@ header {
           transition:
             top 800ms ease,
             font-size 0ms ease,
-            height 800ms ease,
             width 800ms ease,
             background-color 800ms linear;
         }
@@ -255,15 +253,13 @@ header {
         height: 20px;
         width: 100px;
         color: $s60;
-        -webkit-filter: drop-shadow(0 0 0.05vh transparent);
-        filter: drop-shadow(0px 0px 0.05vh transparent);
-        text-shadow: 0 0 1px $p05;
+        text-shadow: 0 0 2px black;
         pointer-events: all;
-        background: $p15;
+        background: $p20;
         padding-left: 3.5px;
 
         span {
-          will-change: color, transform, mix-blend-mode, height, width;
+          will-change: color, transform, height, width;
         }
 
         &:active {
@@ -315,6 +311,8 @@ header {
           background-color 800ms linear;
         top: calc(96% + 60px);
       }
+
+      transition: all 300ms linear;
     }
   }
 }

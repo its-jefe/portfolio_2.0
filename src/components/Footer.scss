@@ -7,16 +7,12 @@
 // ez pz
 
 footer {
-  display: flex;
   position: relative;
-  justify-self: flex-end;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  filter: drop-shadow(0 0 0.3vmin $s60);
+  height: 100px;
+  width: 100%;
+  padding: 0vh 1vh;
   overflow: hidden;
-  padding: 2vh;
+
 
   span {
     position: absolute;
@@ -28,8 +24,9 @@ footer {
     text-orientation: upright;
     left: 0;
   }
+
   // box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-  
+
   .links-container {
     display: flex;
     justify-content: space-around;
@@ -40,63 +37,52 @@ footer {
 
   #card {
     position: relative;
-    fill: $s60;
-    height: clamp(45px, 13vmax, 70px);
-    width: clamp(45px, 13vmax, 70px);
-
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
-    will-change: fill, filter, height, width, mix-blend-mode;
-    transition: fill 300ms linear, filter 300ms, height 300ms ease,
-    width 300ms ease;
-    
-    // filter: drop-shadow(0px 0px 0.2vh $s50);
-    -webkit-filter: drop-shadow(0 0 0.05vh transparent);
-    filter: drop-shadow(0px 0px 0.05vh transparent);
 
-    // text-shadow: 0 0 1px black;
-    text-shadow: 0 0 1px $p05;
+    fill: $s60;
+    height: 70px;
+    width: 70px;
+    filter: drop-shadow(0px 0px 2px black);
+    border-radius: 50%;
 
     // - - - - - - -- - - - - - - - - - -
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: $s50;
-    background-image: linear-gradient($a45, $a45);
-    background-size: 100% 0%;
-    background-position: top;
-    background-repeat: no-repeat;
-    transition: background-size 665ms linear 460ms, filter 1000ms linear 420ms,
-      text-shadow 1000ms linear 350ms;
+
+    will-change:
+      fill,
+      height,
+      width,
+      filter;
+    transition:
+    // fill glitches on <a> tags in safari... there is no transition
+      fill 0ms ease-in-out,
+      filter 100ms ease-in-out,
+      height 300ms linear,
+      width 300ms linear;
     // - - - - - - -- - - - - - - - - - -
 
     &:hover {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      // fill: $a60;
-      transition: mix-blend-mode 1s linear;
-      // fill: transparent;
       fill: $a65;
 
-      -webkit-filter: drop-shadow(0 0 0.05vh $s75);
-      filter: drop-shadow(0px 0px 0.05vh $s75);
-      // text-shadow: 0 0 0.001vh $p05;
-      mix-blend-mode: hard-light;
+      -webkit-filter: drop-shadow(0 0 3px $s75);
+      filter: drop-shadow(0px 0px 3px $s75);
 
       .email_1 {
         opacity: 0;
         transform: rotate(360deg);
       }
+
       .email_3 {
         opacity: 1;
         transform: translate(-6px, 4px) rotate(360deg);
       }
     }
+
     &:active {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
@@ -111,6 +97,7 @@ footer {
     // z-index: -5;
     user-select: none;
   }
+
   /* https://stackoverflow.com/questions/38877174/svg-transition-on-hover-fails-in-safari-9-1-2-11601-7-7 */
   .github {
     position: absolute;
@@ -127,6 +114,7 @@ footer {
     will-change: fill, opacity, transform, height, width;
     transition: opacity 600ms ease, transform 1000ms;
   }
+
   .email_3 {
     position: absolute;
     height: 70%;
@@ -135,6 +123,7 @@ footer {
     will-change: fill, opacity, transform, height, width;
     transition: opacity 600ms ease, transform 1000ms;
   }
+
   .phone {
     position: absolute;
     height: 75%;
@@ -142,12 +131,14 @@ footer {
     will-change: fill, height, width;
   }
 }
+
 @media (orientation: portrait) {
   footer {
     display: absolute;
     bottom: 0;
   }
 }
+
 /* and (max-width: 1800px) ??? */
 @media (orientation: landscape) and (max-height: 600px) {
   footer {
@@ -157,6 +148,5 @@ footer {
   footer #card {
     height: 12vmax;
     width: 12vmax;
-    filter: drop-shadow(0px 0px 0.5vh $s50);
   }
 }
