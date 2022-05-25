@@ -13,7 +13,7 @@ function About() {
           <br/>
           {/* I <em>try</em> to embrace everything with an open mind. I enjoy spending time with familty and friends, guitar, producing music (I dabble), video games, any sports, and chess. I thoroughly enjoy games and healthy competition. */}
           </p>
-          <iframe src="https://my-skyline-2021.web.app/"></iframe>
+          {/* <iframe src="https://my-skyline-2021.web.app/"></iframe> */}
       </section>
     </>
   )
